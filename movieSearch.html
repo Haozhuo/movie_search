@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movie searching</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="ajax.js"></script>
+</head>
+<body>
+	<div id="frame">
+		<form id="movieForm">
+			<label for="title">Title</label>
+			<input id="title" type="text" name="t">
+			<label for="year">Year(optional)</label>
+			<input id="year" type="text" name="y">
+			<label>Plot</label>
+			<select name="plot">
+				<option value="short" id="short">Short</option>
+				<option value="full" id="full">Full</option>
+			</select>
+		</form>
+
+			<button type="submit" form="movieForm">Submit</button>
+
+			<div id="result"></div>
+	</div>
+</body>
+</html>
+
